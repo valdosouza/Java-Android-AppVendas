@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.setes.setesvendas.app.pedidovenda.ListOrderSaleItemActivity">
+
+    <LinearLayout
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="52.0dip">
+
+        <Button
+            android:id="@id/btnInsertOrderItemListt"
+            android:layout_width="0.0dip"
+            android:layout_height="50.0dip"
+            android:text="@string/btnInsertOrderItemList"
+            android:drawableLeft="@drawable/i_insert"
+            android:layout_weight="1.0"
+            android:onClick="addProduct"
+            style="@style/buttonlabel" />
+
+        <Button
+            android:id="@id/btnAlterOrderItemList"
+            android:layout_width="0.0dip"
+            android:layout_height="50.0dip"
+            android:text="@string/btnAlterOrderItemList"
+            android:drawableLeft="@drawable/i_edit"
+            android:layout_weight="1.0"
+            android:onClick="editProduct"
+            style="@style/buttonlabel" />
+
+        <Button
+            android:id="@id/btnDeleteOrderItemList"
+            android:layout_width="0.0dip"
+            android:layout_height="50.0dip"
+            android:text="@string/btnDeleteOrderItemList"
+            android:drawableLeft="@drawable/i_delete"
+            android:layout_weight="1.0"
+            android:onClick="deleteProduct"
+            style="@style/buttonlabel" />
+
+        <Button
+            android:id="@id/btnBackOrderItemList"
+            android:layout_width="0.0dip"
+            android:layout_height="50.0dip"
+            android:text="@string/btnBackOrderItemList"
+            android:drawableLeft="@drawable/i_back"
+            android:layout_weight="1.0"
+            android:onClick="closeListOrderItemActivity"
+            style="@style/buttonlabel" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="23.0dip">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/lblDescriptionProduct"
+            style="@style/summarylabel"
+            android:textColor="@android:color/holo_green_dark" />
+
+        <TextView
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="Qtde"
+            style="@style/summarylabel"
+            android:textColor="@android:color/holo_green_dark" />
+        <TextView
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="V. Unit."
+            style="@style/summarylabel"
+            android:textColor="@android:color/holo_green_dark" />
+
+        <TextView
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="Subtotal"
+            style="@style/summarylabel"
+            android:textColor="@android:color/holo_green_dark" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+
+        android:gravity="center_horizontal"
+        android:background="#1214ae">
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:id="@+id/lstOrdemItemList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:choiceMode="singleChoice"
+            android:clickable="true"
+            android:layoutMode="clipBounds"
+            android:longClickable="true" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical"
+        android:layout_height="30.0dip">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10.0dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:gravity="right"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Valor Total do Pedido:"
+                style="@style/listViewLabel"
+                android:textColor="@android:color/holo_green_dark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginRight="10.0dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0">
+
+            <TextView
+                android:gravity="right"
+                android:id="@id/edtOrderValueTotal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="0,00"
+                style="@style/listViewLabel"
+                android:textColor="@android:color/holo_green_dark" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

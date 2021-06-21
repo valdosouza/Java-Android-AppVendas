@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Black" />
+    <style name="label" parent="@style/AppTheme">
+        <item name="android:textSize">11.0sp</item>
+        <item name="android:textColor">#fff0f8ff</item>
+    </style>
+    <style name="listViewLabel" parent="@style/AppTheme">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#fff0f8ff</item>
+    </style>
+
+    <style name="listViewLabel18" parent="@style/AppTheme">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#fff0f8ff</item>
+    </style>
+    <style name="labelUPPER" parent="@style/AppTheme">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#fff0f8ff</item>
+    </style>
+    <style name="listSpinner" parent="@style/AppTheme">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="EdtText" parent="@style/AppTheme">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:height">40.0dip</item>
+    </style>
+    <style name="summarylabel" parent="@style/AppTheme">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ff53a9db</item>
+    </style>
+    <style name="buttonlabel" parent="@style/AppTheme">
+        <item name="android:textSize">12.0sp</item>
+    </style>
+    <style name="MenuList" parent="@style/AppTheme">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#fff0f8ff</item>
+    </style>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Pesquisa_cliente">
+        <item>Código</item>
+        <item>Nome</item>
+        <item>Telefone</item>
+    </string-array>
+    <string-array name="Pesquisa_produto">
+        <item>Código</item>
+        <item>Nome</item>
+    </string-array>
+    <string-array name="arraySpinnerProdutoServico">
+        <item>Código</item>
+        <item>Descrição</item>
+    </string-array>
+</resources>

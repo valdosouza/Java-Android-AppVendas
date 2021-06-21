@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.setes.setesvendas.app.pedidovenda.AddPhoneActivity">
+
+    <LinearLayout
+        android:gravity="top"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblKindPhone"
+                style="@style/label" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@id/spnKindPhone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/listSpinner" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblPhoneNumber"
+                style="@style/label" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@id/edtPhoneNumber"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@id/btnSavePhone"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:text="@string/btnSavePhone"
+                android:drawableLeft="@drawable/i_save"
+                android:layout_weight="1.0"
+                android:onClick="savePhoneActivity"
+                style="@style/buttonlabel" />
+
+            <Button
+                android:id="@id/btnCancelPhone"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:text="@string/btnCancelPhone"
+                android:drawableLeft="@drawable/i_back"
+                android:layout_weight="1.0"
+                android:onClick="cancelPhoneActivity"
+                style="@style/buttonlabel" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

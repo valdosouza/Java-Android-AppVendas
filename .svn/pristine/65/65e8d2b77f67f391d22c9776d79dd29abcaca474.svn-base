@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.setes.setesvendas.app.pedidovenda.OrderActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="15.0dip">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblOrderProvisoryNumber"
+            style="@style/label" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="20.0dip">
+
+        <TextView
+            android:id="@id/EdtOrderProvisoryNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/edtOrderProvisoryNumber"
+            style="@style/summarylabel" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="15.0dip">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblOrderCustomerName"
+            style="@style/label" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="20.0dip">
+
+        <TextView
+            android:id="@id/edtOrderCustomerName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/edtOrderCustomerName"
+            style="@style/summarylabel" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="15.0dip">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblOrderCustomerTrade"
+            style="@style/label" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="20.0dip">
+
+        <TextView
+            android:id="@id/edtOrderCustomerTrade"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/edtOrderCustomerTrade"
+            style="@style/summarylabel" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ff53a9db"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <LinearLayout
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip">
+
+        <TextView
+            android:gravity="left"
+            android:layout_width="130.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/lblOrderValueTotal"
+            style="@style/summarylabel" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="right|center"
+            android:id="@id/edtOrderValueTotal"
+            android:layout_width="120.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/edtOrderValueTotal"
+            style="@style/summarylabel" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ff53a9db"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginTop="10.0dip" />
+
+    <LinearLayout
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip">
+
+        <GridView
+            android:id="@id/grdordermenu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="10.0dip"
+            android:verticalSpacing="10.0dip"
+            android:stretchMode="columnWidth"
+            android:columnWidth="50.0dip"
+            android:numColumns="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ff53a9db"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="20.0dip">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Observação"
+                style="@style/summarylabel" />
+         </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@id/edtOrderObservacao"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip">
+
+        <Button
+            android:id="@id/btnSavetOrder"
+            android:layout_width="0.0dip"
+            android:layout_height="55.0dip"
+            android:text="@string/btnSavetOrder"
+            android:drawableLeft="@drawable/i_save"
+            android:layout_weight="1.0"
+            android:onClick="saveOrderActivity"
+            style="@style/buttonlabel" />
+
+        <Button
+            android:id="@id/btnSearchBackOrder"
+            android:layout_width="0.0dip"
+            android:layout_height="55.0dip"
+            android:text="@string/btnSearchBackOrder"
+            android:drawableLeft="@drawable/i_back"
+            android:layout_weight="1.0"
+            android:onClick="closeOrderActivity"
+            style="@style/buttonlabel" />
+    </LinearLayout>
+
+</LinearLayout>

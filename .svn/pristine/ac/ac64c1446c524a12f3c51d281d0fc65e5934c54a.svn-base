@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.setes.setesvendas.app.pedidovenda.ConfigActivity">
+
+    <LinearLayout
+        android:gravity="top"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="20.0dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblPathWebService"
+                style="@style/label" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@id/edtPathWebService"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="http://www.gestaosetes.com.br/ws/index.php"
+                android:inputType="textUri" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="20.0dip">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/lblCodigoInstitution"
+                android:layout_weight="1.0"
+                style="@style/label" />
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="@string/lblCodSalesman"
+                android:layout_weight="1.0"
+                style="@style/label" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@id/edtCodInstitution"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@id/edtCodSalesman"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="20.0dip">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="Último Pedido enviado"
+                android:layout_weight="1.0"
+                style="@style/label" />
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="Código Tabela de Preço"
+                android:layout_weight="1.0"
+                style="@style/label" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@id/edtLastOrderSent"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/edtCodigoTablePrice"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip">
+
+            <Button
+                android:id="@+id/btnSaveConfig"
+                android:layout_width="0.0dip"
+                android:layout_height="50.0dip"
+                android:text="@string/btnSaveConfig"
+                android:drawableLeft="@drawable/i_save"
+                android:layout_weight="1.0"
+                android:onClick="saveConfigActivity"
+                style="@style/buttonlabel" />
+
+            <Button
+                android:id="@id/btnBackConfig"
+                android:layout_width="0.0dip"
+                android:layout_height="50.0dip"
+                android:text="@string/btnBackConfig"
+                android:drawableLeft="@drawable/i_back"
+                android:layout_weight="1.0"
+                android:onClick="closeConfigActivity"
+                style="@style/buttonlabel" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

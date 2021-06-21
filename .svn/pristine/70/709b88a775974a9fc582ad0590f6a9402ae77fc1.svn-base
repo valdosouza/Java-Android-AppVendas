@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.setes.setesvendas.app.pedidovenda.SearchProductActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblSearchProduct" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@id/edtSearchProductDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@id/btnSelectSearchProduct"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/btnSelectSearchProduct"
+            android:drawableLeft="@drawable/i_select"
+            android:layout_weight="1.0"
+            android:onClick="selectItemProduct"
+            style="@style/buttonlabel" />
+
+        <Button
+            android:id="@id/btnBackSearchProduct"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/btnBackSearchProduct"
+            android:drawableLeft="@drawable/i_back"
+            android:layout_weight="1.0"
+            android:onClick="BackProduct"
+            style="@style/buttonlabel" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="23.0dip">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/lblDescriptionProduct"
+            style="@style/summarylabel"
+            android:textColor="@android:color/holo_green_dark" />
+
+        <TextView
+            android:textStyle="bold"
+            android:gravity="right"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="Valor Unitário"
+            style="@style/summarylabel"
+            android:textColor="@android:color/holo_green_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="0.0dip"
+        android:gravity="center_horizontal"
+        android:background="#1214ae">
+    </LinearLayout>
+
+    <ListView
+        android:id="@id/lstSearchProduct"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_key"/>
+</LinearLayout>

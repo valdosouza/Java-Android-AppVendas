@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.setes.setesvendas.app.pedidovenda.CustomerActivity">
+
+    <LinearLayout
+        android:gravity="top"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblKindPerson"
+                style="@style/label" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@id/rdg_kindPerson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@id/rdb_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/rdb_company" />
+
+                <RadioButton
+                    android:id="@id/rdb_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/rdb_person" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@id/lblNameCompanyCustomer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblNameCompanyCustomer"
+                style="@style/label" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@id/edtNameCompanyCustomer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapCharacters" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@id/lblNickTradeCustomer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblNickTradeCustomer"
+                style="@style/label" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@id/edtNickTradeCustomer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapCharacters" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@id/lblCpfCNPJCustomer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblCpfCnpjCustomer"
+                style="@style/label" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@id/edtCpfCNPJCustomer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@id/lblRgIeCustomer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblRgIeCustomer"
+                style="@style/label" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@id/edtRgIeCustomer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapCharacters" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblEmailCustomer"
+                style="@style/label" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@id/edtEmailCustomer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnNewCustomer"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:text="@string/btnNewCustomer"
+                android:drawableLeft="@drawable/i_insert"
+                android:layout_weight="1.0"
+                android:onClick="newCustomerActivity"
+                style="@style/buttonlabel" />
+
+            <Button
+                android:id="@+id/btnSaveCustomer"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:text="@string/btnSaveCustomer"
+                android:drawableLeft="@drawable/i_save"
+                android:layout_weight="1.0"
+                android:onClick="saveCustomerActivity"
+                style="@style/buttonlabel" />
+
+            <Button
+                android:id="@id/btnCanSelectCustomer"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:text="@string/btnCancelCustomer"
+                android:drawableLeft="@drawable/i_back"
+                android:layout_weight="1.0"
+                android:onClick="cancelCustomer"
+                style="@style/buttonlabel" />
+
+            <Button
+                android:id="@id/btnSelectCustomer"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:text="@string/btnSearchCustomer"
+                android:drawableLeft="@drawable/i_search"
+                android:layout_weight="1.0"
+                android:onClick="searchCustomer"
+                style="@style/buttonlabel" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

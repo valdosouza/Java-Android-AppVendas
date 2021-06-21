@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:typeface="sans"
+            android:textStyle="bold"
+            android:id="@id/edtListAddress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/itemLstStreetAddress"
+            style="@style/listViewLabel" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:typeface="sans"
+            android:textStyle="bold"
+            android:id="@id/edtListNeighborhood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/itemLstNeighborhoodAddress"
+            style="@style/listViewLabel" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40.0dip"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:typeface="sans"
+            android:textStyle="bold"
+            android:id="@id/edtListCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/itemLstCityAddress"
+            style="@style/listViewLabel" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60.0dip"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:gravity="left"
+            android:layout_gravity="right"
+            android:id="@id/edtListState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/itemLstStateAddress"
+            style="@style/listViewLabel" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="83.0dip"
+        android:gravity="center_horizontal"
+        android:background="#1214ae">
+    </LinearLayout>
+</RelativeLayout>

@@ -1,9 +1,7 @@
-/.gradle
-/.idea
-/.svn
-/build.gradle
-/Firebase
-/gradle
-/keysign
+.gradle
 /local.properties
-/setDebugViewFirebase.txt
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
