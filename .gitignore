@@ -1,0 +1,9 @@
+/.gradle
+/.idea
+/.svn
+/build.gradle
+/Firebase
+/gradle
+/keysign
+/local.properties
+/setDebugViewFirebase.txt

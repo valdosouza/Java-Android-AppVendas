@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.setes.setesvendas.app.pedidovenda.SearchOrderActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.0dip">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblSearchDateOrder"
+                style="@style/listViewLabel" />
+
+            <EditText
+                android:gravity="left"
+                android:id="@id/edtSearchDateOrder"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblSearchNumberOrder"
+                style="@style/listViewLabel" />
+
+            <EditText
+                android:gravity="center"
+                android:id="@id/edtSearchNumberOrder"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblSearchCustomerOrder"
+                style="@style/listViewLabel" />
+
+            <EditText
+                android:gravity="left"
+                android:id="@id/edtSearchCustomerOrder"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@id/btnSearchSelectOrder"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/btnSearchSelectOrder"
+            android:drawableLeft="@drawable/i_select"
+            android:layout_weight="1.0"
+            android:onClick="selectItemOrder"
+            style="@style/buttonlabel" />
+
+        <Button
+            android:id="@id/btnSearchDeleteOrder"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/btnSearchDeleteOrder"
+            android:drawableLeft="@drawable/i_delete"
+            android:layout_weight="1.0"
+            android:onClick="deleteOrder"
+            style="@style/buttonlabel" />
+
+        <Button
+            android:id="@id/btnSearchCopyOrder"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/btnSearchCopyOrder"
+            android:drawableLeft="@drawable/i_insert"
+            android:layout_weight="1.0"
+            android:onClick="OpenCopyOrder"
+            style="@style/buttonlabel" />
+
+        <Button
+            android:id="@id/btnSearchBackOrder"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/btnSearchBackOrder"
+            android:drawableLeft="@drawable/i_back"
+            android:layout_weight="1.0"
+            android:onClick="closeSearchOrderActivity"
+            style="@style/buttonlabel" />
+
+        <Button
+            android:id="@id/btnSendOrderWs"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/btnSendOrderWs"
+            android:drawableLeft="@drawable/i_next"
+            android:layout_weight="1.0"
+            android:onClick="sendOrderWsByOne"
+            style="@style/buttonlabel" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="23.0dip"
+        android:layout_marginTop="5.0dip">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5">
+
+            <TextView
+                android:gravity="left"
+                android:id="@id/edtDateOrderList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Data"
+                style="@style/listViewLabel"
+                android:textColor="@android:color/holo_green_dark"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:gravity="center"
+                android:id="@id/edtNumberOrderList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Ordem"
+                style="@style/listViewLabel"
+                android:textColor="@android:color/holo_green_dark"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.5">
+
+            <TextView
+                android:gravity="left"
+                android:id="@id/edtCustomerNameList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Nome do Cliente"
+                style="@style/listViewLabel"
+                android:textColor="@android:color/holo_green_dark"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+
+        android:gravity="center_horizontal"
+        android:background="#1214ae">
+    </LinearLayout>
+
+    <ListView
+        android:id="@id/lstOrderListt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

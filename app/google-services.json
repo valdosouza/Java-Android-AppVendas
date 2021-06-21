@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "733341540627",
+    "firebase_url": "https://setesvendas-211ed.firebaseio.com",
+    "project_id": "setesvendas-211ed",
+    "storage_bucket": "setesvendas-211ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733341540627:android:9720e328e296cd8c",
+        "android_client_info": {
+          "package_name": "com.setes.setesvendas.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "733341540627-v0v253vcstiv35ni4fenfbe2aj95rp0d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.setes.setesvendas.app",
+            "certificate_hash": "28103aa6b47f17fcb8713b44d4e1d9b4ef30aea9"
+          }
+        },
+        {
+          "client_id": "733341540627-9r0bp6a6beco6f5pul1shrgttpbuapar.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoRYHG1-l7qIPcbNbTEFNQ2FgUlORQqvA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "733341540627-9r0bp6a6beco6f5pul1shrgttpbuapar.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

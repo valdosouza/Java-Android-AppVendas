@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.setes.setesvendas.app.pedidovenda.AddOrderSaleItemActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/lblCodigoProduct"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/lblReferênciaProduct"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="left|center"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@id/edtCodigoProduct"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@id/edtCodigoInternal"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblDescriptionProduct" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="left|center"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@id/edtDescriptionProduct"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/lblQtdeItensProduct"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/lblUnitValueItensProduct"
+            android:layout_weight="2.0" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/lblSubtotalValueItensProduct"
+            android:layout_weight="2.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:gravity="right"
+            android:id="@id/edtQtdeItensProduct"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/edtvalue"
+            android:digits="1234567890."
+            android:layout_weight="1.0"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:gravity="right"
+            android:id="@id/edtUnitValueItensProduct"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/edtvalue"
+            android:digits="1234567890."
+            android:layout_weight="2.0"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:gravity="right"
+            android:id="@id/edtSubtotalValueItensProduct"
+            android:focusable="false"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/edtvalue"
+            android:editable="false"
+            android:layout_weight="2.0"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@id/btnSaveProduct"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/btnSaveProduct"
+            android:drawableLeft="@drawable/i_save"
+            android:layout_weight="1.0"
+            android:onClick="saveAddProductActivity"
+            style="@style/buttonlabel" />
+
+        <Button
+            android:id="@id/btnSearchProduct"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/btnSearchProduct"
+            android:drawableLeft="@drawable/i_search"
+            android:layout_weight="1.0"
+            android:onClick="searchProduct"
+            style="@style/buttonlabel" />
+
+        <Button
+            android:id="@id/btnBackSearchProduct"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/btnBackSearchProduct"
+            android:drawableLeft="@drawable/i_back"
+            android:layout_weight="1.0"
+            android:onClick="closeAddSAleItemActivity"
+            style="@style/buttonlabel" />
+    </LinearLayout>
+</LinearLayout>

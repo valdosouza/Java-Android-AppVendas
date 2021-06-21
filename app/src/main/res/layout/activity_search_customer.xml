@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.setes.setesvendas.app.pedidovenda.SearchCustomerActivity">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@id/rgbSearchKindCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@id/rdb_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/rdb_company" />
+
+            <RadioButton
+                android:id="@id/rdb_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/rdb_person" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@id/rgbSearchKindNameCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@id/rdb_nicktrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Nome Fantasia" />
+
+            <RadioButton
+                android:id="@id/rdb_namecompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Nome/Razão Social" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@id/lblSearchNameCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblSearchNameCustomer" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@id/edtSearchCustomerName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@id/lblSearchCNPJCPFCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblSearchCNPJCPFCustomer" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@id/edtSearchCustomerCNPJCPF"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@id/btnSelectSearchCustomer"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/btnSelectSearchCustomer"
+            android:drawableLeft="@drawable/i_select"
+            android:layout_weight="1.0"
+            android:onClick="selectItemCustomer" />
+
+        <Button
+            android:id="@id/btnBackSearchCustomer"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/btnBackSearchProduct"
+            android:drawableLeft="@drawable/i_back"
+            android:layout_weight="1.0"
+            android:onClick="BackCustomer" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="23.0dip">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="Clientes"
+            style="@style/summarylabel"
+            android:textColor="@android:color/holo_green_dark" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="0.0dip"
+        android:gravity="center_horizontal"
+        android:background="@drawable/bg_key">
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@id/lstSearchCustomer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

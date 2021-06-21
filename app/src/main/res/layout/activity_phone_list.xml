@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.setes.setesvendas.app.pedidovenda.ListPhoneActivity">
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@id/btnInsertPhoneList"
+            android:layout_width="0.0dip"
+            android:layout_height="50.0dip"
+            android:text="@string/btnInsertPhoneList"
+            android:drawableLeft="@drawable/i_insert"
+            android:layout_weight="1.0"
+            android:onClick="addPhone"
+            style="@style/buttonlabel" />
+
+        <Button
+            android:id="@id/btnAlterPhoneList"
+            android:layout_width="0.0dip"
+            android:layout_height="50.0dip"
+            android:text="@string/btnAlterPhoneList"
+            android:drawableLeft="@drawable/i_edit"
+            android:layout_weight="1.0"
+            android:onClick="editPhone"
+            style="@style/buttonlabel" />
+
+        <Button
+            android:id="@id/btnDeletePhoneList"
+            android:layout_width="0.0dip"
+            android:layout_height="50.0dip"
+            android:text="@string/btnDeletePhoneList"
+            android:drawableLeft="@drawable/i_delete"
+            android:layout_weight="1.0"
+            android:onClick="deletePhone"
+            style="@style/buttonlabel" />
+
+        <Button
+            android:id="@id/btnBackAddressList"
+            android:layout_width="0.0dip"
+            android:layout_height="50.0dip"
+            android:text="@string/btnBackAddressList"
+            android:drawableLeft="@drawable/i_back"
+            android:layout_weight="1.0"
+            android:onClick="closeListPhoneActivity"
+            style="@style/buttonlabel" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:gravity="center_horizontal"
+        android:background="#1214ae">
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:id="@id/lstPhoneList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

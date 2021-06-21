@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:typeface="sans"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#fff0f8ff"
+            android:id="@id/edtListCustomerName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/edtListCustomerName"
+            style="@style/listViewLabel18" />
+    </LinearLayout>
+</RelativeLayout>

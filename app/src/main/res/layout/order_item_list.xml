@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.0dip"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:typeface="sans"
+            android:textStyle="bold"
+            android:id="@id/edtDescriptionOrdemItem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/edtDescriptionOrdemItem"
+            style="@style/listViewLabel" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21.0dip"
+        android:id="@+id/linearLayout">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:gravity="right"
+                android:id="@id/edtQttyOrdemItem"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/edtQttyOrdemItem"
+                style="@style/listViewLabel" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:gravity="right"
+                android:id="@id/edtUnitValueOrdemItem"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/edtUnitValueOrdemItem"
+                style="@style/listViewLabel" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:gravity="right"
+                android:id="@id/edtSubtotalOrdemItem"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/edtSubtotalOrdemItem"
+                style="@style/listViewLabel" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="42.0dip"
+        android:gravity="center_horizontal"
+        android:background="#1214ae">
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:gravity="left|center_vertical"
+            android:layout_gravity="left|center_vertical"
+            android:typeface="sans"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#fff0f8ff"
+            android:id="@id/edtSearchProductDescription"
+            android:layout_width="wrap_content"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:text="@string/edtSearchProductDescription"/>
+
+        <TextView
+            android:gravity="right|center_vertical"
+            android:layout_gravity="right|center_vertical"
+            android:typeface="sans"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#fff0f8ff"
+            android:id="@id/edtListSearchProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="@string/edtListSearchProductPrice"
+            android:layout_marginRight="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center_horizontal"
+        android:background="#1214ae">
+    </LinearLayout>
+</RelativeLayout>

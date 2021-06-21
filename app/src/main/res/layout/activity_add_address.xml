@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.setes.setesvendas.app.pedidovenda.AddAddressActivity">
+
+    <LinearLayout
+        android:gravity="top"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblZipCode"
+                style="@style/label" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="left"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@id/edtZipCode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblState"
+                style="@style/label" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="left"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp">
+
+            <Spinner
+                android:id="@id/edtState"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblCity"
+                style="@style/label" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="left"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@id/edtCity"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblAddress"
+                style="@style/label" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="left"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@id/edtAddress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textUri" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblNmbAddress"
+                style="@style/label" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="left"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@id/edtNmbAddress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblComplement"
+                style="@style/label" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="left"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@id/edtComplement"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textUri" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblNeighborhood"
+                style="@style/label" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="left"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@id/edtNeighborhood"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblAddressKind"
+                style="@style/label" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@id/edtAddressKind"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@id/btnSaveAddress"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:text="@string/btnSaveAddress"
+                android:drawableLeft="@drawable/i_save"
+                android:layout_weight="1.0"
+                android:onClick="saveAddressActivity"
+                style="@style/buttonlabel" />
+
+            <Button
+                android:id="@id/btnCancelAddress"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:text="@string/btnCancelAddress"
+                android:drawableLeft="@drawable/i_back"
+                android:layout_weight="1.0"
+                android:onClick="cancelAddressActivity"
+                style="@style/buttonlabel" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

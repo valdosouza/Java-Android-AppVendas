@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.0dip"
+        android:layout_marginLeft="0.0dip"
+        android:layout_alignParentLeft="true">
+
+        <CheckBox
+            android:id="@+id/chbItenOrdemCopyItem"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:clickable="true"
+            android:enabled="true"
+            android:gravity="center|top"
+            android:checked="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.0dip"
+        android:layout_marginLeft="40.0dip"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:typeface="sans"
+            android:textStyle="bold"
+            android:id="@id/edtDescriptionOrdemCopyItem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/edtDescriptionOrdemCopyItem"
+            style="@style/listViewLabel" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21.0dip"
+        android:layout_marginLeft="40.0dip"
+        android:id="@+id/linearLayout">
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:gravity="right"
+                android:id="@id/edtQttyOrdemCopyItem"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/edtQttyOrdemCopyItem"
+                style="@style/listViewLabel" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:gravity="right"
+                android:id="@id/edtUnitValueOrdemCopyItem"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/edtUnitValueOrdemCopyItem"
+                style="@style/listViewLabel" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:gravity="right"
+                android:id="@id/edtSubtotalOrdemCopyItem"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/edtSubtotalOrdemCopyItem"
+                style="@style/listViewLabel" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="48.0dip"
+        android:gravity="center_horizontal"
+        android:background="#1214ae">
+    </LinearLayout>
+</RelativeLayout>
